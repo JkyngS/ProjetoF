@@ -1,4 +1,4 @@
-import { Surgery, SurgeryRoom } from '../types/surgery';
+import { SurgeryRoom } from '../types/surgery';
 
 export const surgeryData: SurgeryRoom[] = [
   {
