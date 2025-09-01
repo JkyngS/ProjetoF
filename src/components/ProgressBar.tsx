@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { Surgery } from '../types/surgery';
+
 interface ProgressBarProps {
-  duration: string;
-  status: string;
+  duration?: string;
+  status: Surgery['status_agenda'];
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({ duration, status }) => {

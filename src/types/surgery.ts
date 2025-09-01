@@ -1,13 +1,13 @@
 export interface Surgery {
-  id: string;
-  room: string;
-  time: string;
-  code: string;
-  patient: string;
-  doctor: string;
-  procedure: string;
-  status: 'preparing' | 'in_progress' | 'completed' | 'called';
-  duration: string;
+  nr_sequencia: string;
+  sala: string;
+  horario: string;
+  codigo_procedimento_principal: string;
+  paciente: string;
+  medico: string;
+  procedimento: string;
+  status_agenda: 'preparing' | 'in_progress' | 'completed' | 'called';
+  duracao?: string;
   progress?: number;
 }
 

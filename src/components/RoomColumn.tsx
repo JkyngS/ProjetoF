@@ -9,9 +9,9 @@ interface RoomColumnProps {
 export const RoomColumn: React.FC<RoomColumnProps> = ({ room }) => {
   return (
     <div className="flex flex-col gap-4">
-      {room.surgeries.map((surgery) => (
-        <SurgeryCard key={surgery.id} surgery={surgery} />
-      ))}
+        {room.surgeries.map((surgery) => (
+          <SurgeryCard key={surgery.nr_sequencia} surgery={surgery} />
+        ))}
     </div>
   );
 };

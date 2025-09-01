@@ -2,7 +2,7 @@ import React from 'react';
 import { Surgery } from '../types/surgery';
 
 interface StatusBadgeProps {
-  status: Surgery['status'];
+  status: Surgery['status_agenda'];
 }
 
 export const StatusBadge: React.FC<StatusBadgeProps> = ({ status }) => {
