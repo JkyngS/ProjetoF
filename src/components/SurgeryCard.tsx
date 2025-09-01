@@ -3,6 +3,7 @@ import { Clock, User, Stethoscope, FileText, Users } from 'lucide-react';
 import { Surgery } from '../types/surgery';
 import { StatusBadge } from './StatusBadge';
 import { ProgressBar } from './ProgressBar';
+import { getInitials } from '../utils/string';
 
 interface SurgeryCardProps {
   surgery: Surgery;
@@ -30,7 +31,7 @@ export const SurgeryCard: React.FC<SurgeryCardProps> = ({ surgery }) => {
         <div className="flex items-start gap-2">
           <User className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
           <div>
-            <div className="text-sm font-medium text-gray-900">{surgery.patient}</div>
+            <div className="text-sm font-medium text-gray-900">{getInitials(surgery.patient)}</div>
             <div className="text-xs text-gray-500">Paciente</div>
           </div>
         </div>
